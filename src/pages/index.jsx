@@ -1,5 +1,9 @@
-import NavBar from "@/components/NavBar";
-import Head from "next/head";
+import NavBar from "@/components/NavBar"
+import Head from "next/head"
+import Footer from "@/components/Footer"
+import Hero from "@/components/Homepage/Hero"
+import HomepageContent from "@/components/Homepage/HomepageContent"
+import HomepageReview from "@/components/Homepage/HomepageReview"
 
 export default function Home() {
   return (
@@ -12,7 +16,11 @@ export default function Home() {
       </Head>
       <main>
         <NavBar />
+        <Hero />
+        <HomepageContent />
+        <HomepageReview />
+        <Footer />
       </main>
     </>
-  );
+  )
 }

@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
 
 @import "./components/navbar.scss";
+@import "./components/footer.scss";
+@import "./components/hero.scss";
+@import "./components/homepage-content.scss";
+@import "./components/homepage-review.scss";
 
 * {
   padding: 0;
@@ -55,4 +59,12 @@ h6 {
 .container {
   max-width: 100rem;
   margin: auto;
+
+  padding-right: 10rem;
+  padding-left: 10rem;
+
+  @media screen and (max-width: 1200px) {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 }

@@ -1,0 +1,63 @@
+@import "../variables.scss";
+
+.homepage-review-wrapper {
+  background: $gray;
+}
+
+.homepage-review {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 8rem;
+  padding: 8rem 10rem;
+
+  .right {
+    position: relative;
+
+    .review {
+      h5 {
+        text-align: left;
+      }
+
+      .avatar {
+        display: flex;
+        align-items: center;
+        margin-top: 3rem;
+
+        .image {
+          position: relative;
+          width: 56px;
+          height: 56px;
+          max-width: 56px;
+          max-height: 56px;
+
+          img {
+            object-fit: scale-down;
+            border-radius: 40px;
+          }
+        }
+
+        .info {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+
+          .name {
+            font-size: 18px;
+            line-height: 32px;
+          }
+
+          .status {
+            font-size: 12px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+
+    .buttons {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

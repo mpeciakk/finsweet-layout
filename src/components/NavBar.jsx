@@ -1,8 +1,8 @@
-import Image from "next/image";
-import { useState } from "react";
+import Image from "next/image"
+import { useState } from "react"
 
 export default function NavBar() {
-  const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const [isNavExpanded, setIsNavExpanded] = useState(false)
 
   return (
     <div className="navbar-wrapper wrapper">
@@ -39,5 +39,5 @@ export default function NavBar() {
         </ul>
       </nav>
     </div>
-  );
+  )
 }

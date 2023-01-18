@@ -81,8 +81,13 @@
     align-items: center;
     list-style: none;
     gap: 2rem;
-    color: #bbbbcb;
     transition: 0.3s ease-in-out;
+    color: #bbbbcb;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
     .active {
       color: white;

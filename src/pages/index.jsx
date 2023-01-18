@@ -1,7 +1,7 @@
 import NavBar from "@/components/NavBar"
 import Head from "next/head"
 import Footer from "@/components/Footer"
-import Hero from "@/components/Homepage/Hero"
+import Hero from "@/components/Hero"
 import HomepageContent from "@/components/Homepage/HomepageContent"
 import HomepageReview from "@/components/Homepage/HomepageReview"
 
@@ -16,7 +16,16 @@ export default function Home() {
       </Head>
       <main>
         <NavBar />
-        <Hero />
+        <Hero content={<div className="homepage-hero">
+          <h1>Building stellar websites for early startups</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+
+          <div className="buttons">
+            <button className="work">View our work</button>
+            <button className="pricing">View pricing</button>
+          </div>
+        </div>} image={"/homepage-hero.png"} />
+
         <HomepageContent />
         <HomepageReview />
         <Footer />

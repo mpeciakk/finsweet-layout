@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { useState } from "react"
+import Link from "next/link"
 
 export default function NavBar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false)
@@ -26,8 +27,10 @@ export default function NavBar() {
         </button>
 
         <ul className={`links ${isNavExpanded ? "expanded" : ""}`}>
-          <li className="active">Home</li>
-          <li>About us</li>
+          <li className="active"><Link href="about-us">Home</Link></li>
+          <li>
+            <Link href="about-us">About us</Link>
+          </li>
           <li>Features</li>
           <li>Pricing</li>
           <li>FAQ</li>

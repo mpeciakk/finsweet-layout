@@ -81,8 +81,8 @@ export default function HomepageReview() {
           </Carousel>
 
           <div className="buttons">
-            <button onClick={prevSlide}>Prev</button>
-            <button onClick={nextSlide}>Next</button>
+            <button onClick={prevSlide}><span className="arrow" /></button>
+            <button className="next" onClick={nextSlide}><span className="arrow" /></button>
           </div>
         </div>
       </div>

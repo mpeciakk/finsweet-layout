@@ -1,0 +1,20 @@
+@import "../variables.scss";
+
+.aboutus-benefits-wrapper {
+  background: white;
+}
+
+.aboutus-benefits {
+  h2 {
+    margin-top: 8rem;
+    text-align: center;
+    color: $dark-blue;
+  }
+
+  .cards {
+    padding: 3rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+}

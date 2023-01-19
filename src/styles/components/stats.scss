@@ -1,0 +1,30 @@
+@import "../variables.scss";
+
+.stats {
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+
+  .users {
+    h3 {
+      color: $dark-blue;
+    }
+
+    span {
+      font-weight: 400;
+      color: $dark-blue;
+    }
+  }
+
+  .icons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  @media screen and (max-width: 1100px) {
+    display: none;
+  }
+}

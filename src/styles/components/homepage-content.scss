@@ -12,14 +12,5 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     box-sizing: border-box;
-
-    .box {
-      text-align: left;
-      padding: 3rem;
-
-      h6 {
-        padding: 0.6rem 0;
-      }
-    }
   }
 }

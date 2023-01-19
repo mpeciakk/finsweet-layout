@@ -2,6 +2,10 @@ import Head from "next/head"
 import NavBar from "@/components/NavBar"
 import Hero from "@/components/Hero"
 import Footer from "@/components/Footer"
+import AboutUsContent from "@/components/AboutUs/AbousUsContent"
+import AboutUsBenefits from "@/components/Benefits"
+import Stats from "@/components/Stats"
+import AboutUsTeam from "@/components/AboutUs/AbousUsTeam"
 
 export default function AboutUs() {
   return (
@@ -19,6 +23,11 @@ export default function AboutUs() {
           <h1>Building stellar websites for early startups</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>} image={"/aboutus-hero.webp"} />
+
+        <AboutUsContent />
+        <AboutUsBenefits />
+        <Stats />
+        <AboutUsTeam />
 
         <Footer />
       </main>

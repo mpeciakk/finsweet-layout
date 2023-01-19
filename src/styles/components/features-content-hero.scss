@@ -1,0 +1,23 @@
+@import "../variables.scss";
+
+.features {
+  .hero-wrapper {
+    background: white;
+  }
+}
+
+.features-content-hero {
+  p {
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  span {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  p, span, h1 {
+    color: $dark-blue;
+  }
+}

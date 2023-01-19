@@ -1,6 +1,6 @@
 import Card from "@/components/Card"
 
-export default function AboutUsBenefits() {
+export default function Benefits() {
   return (
     <div className="aboutus-benefits-wrapper wrapper">
       <div className="aboutus-benefits container">

@@ -3,7 +3,7 @@ import NavBar from "@/components/NavBar"
 import Hero from "@/components/Hero"
 import Footer from "@/components/Footer"
 import AboutUsContent from "@/components/AboutUs/AbousUsContent"
-import AboutUsBenefits from "@/components/Benefits"
+import Benefits from "@/components/Benefits"
 import Stats from "@/components/Stats"
 import AboutUsTeam from "@/components/AboutUs/AbousUsTeam"
 
@@ -25,7 +25,7 @@ export default function AboutUs() {
         </div>} image={"/aboutus-hero.webp"} />
 
         <AboutUsContent />
-        <AboutUsBenefits />
+        <Benefits />
         <Stats />
         <AboutUsTeam />
 

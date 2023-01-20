@@ -1,0 +1,31 @@
+@import "../variables";
+
+.wrapper {
+  width: 100%;
+  background: $tint-blue;
+}
+
+.container {
+  max-width: 100rem;
+  margin: auto;
+
+  padding-right: 10rem;
+  padding-left: 10rem;
+
+  @media screen and (max-width: 1200px) {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.wrapper-light {
+  .wrapper {
+    background: white;
+  }
+}
+
+.wrapper-gray {
+  .wrapper {
+    background: $gray;
+  }
+}

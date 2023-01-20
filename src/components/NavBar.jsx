@@ -27,11 +27,15 @@ export default function NavBar() {
         </button>
 
         <ul className={`links ${isNavExpanded ? "expanded" : ""}`}>
-          <li className="active"><Link href="/">Home</Link></li>
+          <li className="active">
+            <Link href="/">Home</Link>
+          </li>
           <li>
             <Link href="about-us">About us</Link>
           </li>
-          <li>Features</li>
+          <li>
+            <Link href="features">Features</Link>
+          </li>
           <li>Pricing</li>
           <li>FAQ</li>
           <li>Blog</li>

@@ -1,7 +1,9 @@
+import WhiteContainer from "@/components/Container/WhiteContainer"
+
 export default function Stats() {
   return (
-    <div className="stats-wrapper wrapper">
-      <div className="stats container">
+    <WhiteContainer>
+      <div className="stats">
         <div className="users">
           <h3>100.000+</h3>
           <span>Finsweet Users</span>
@@ -15,6 +17,6 @@ export default function Stats() {
           <div className="icon">logoipsum</div>
         </div>
       </div>
-    </div>
+    </WhiteContainer>
   )
 }

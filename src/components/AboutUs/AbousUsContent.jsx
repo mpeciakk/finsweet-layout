@@ -1,10 +1,10 @@
 import Image from 'next/image'
+import WhiteContainer from "@/components/Container/WhiteContainer"
 
 export default function AboutUsContent() {
   return (
-    <div className="aboutus-wrapper wrapper">
-      <div className="aboutus-content container">
-        <div className="aboutus-content-inner">
+    <WhiteContainer>
+        <div className="aboutus">
           <span>Who we are</span>
           <div className="goal">
             <h3>Goal focussed</h3>
@@ -23,7 +23,6 @@ export default function AboutUsContent() {
         <div className="image">
           <Image src="/aboutus-content.jpeg" alt="aboutus-content" fill></Image>
         </div>
-      </div>
-    </div>
+      </WhiteContainer>
   )
 }

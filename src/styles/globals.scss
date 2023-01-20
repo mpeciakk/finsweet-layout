@@ -4,17 +4,15 @@
 @import "./components/navbar.scss";
 @import "./components/footer.scss";
 @import "./components/hero.scss";
-@import "./components/homepage-content.scss";
-@import "./components/homepage-review.scss";
-@import "./components/homepage-hero.scss";
-@import "./components/aboutus-hero.scss";
-@import "./components/aboutus-content.scss";
+@import "components/homepage/homepage-features";
+@import "components/homepage/homepage-review";
+@import "components/about-us/aboutus-content";
 @import "./components/benefits.scss";
 @import "./components/card.scss";
 @import "./components/stats.scss";
-@import "./components/aboutus-team.scss";
-@import "./components/features-hero.scss";
-@import "./components/features-content-hero.scss";
+@import "components/about-us/aboutus-team";
+@import "components/button.scss";
+@import "components/container";
 
 * {
   padding: 0;
@@ -59,21 +57,4 @@ h6 {
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
-}
-
-.wrapper {
-  width: 100%;
-}
-
-.container {
-  max-width: 100rem;
-  margin: auto;
-
-  padding-right: 10rem;
-  padding-left: 10rem;
-
-  @media screen and (max-width: 1200px) {
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
 }

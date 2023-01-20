@@ -1,11 +1,9 @@
 import Head from "next/head"
-import NavBar from "@/components/NavBar"
-import Hero from "@/components/Hero"
-import Footer from "@/components/Footer"
 import AboutUsContent from "@/components/AboutUs/AbousUsContent"
 import Benefits from "@/components/Benefits"
 import Stats from "@/components/Stats"
 import AboutUsTeam from "@/components/AboutUs/AbousUsTeam"
+import LightHero from "@/components/Hero/LightHero"
 
 export default function AboutUs() {
   return (
@@ -16,20 +14,18 @@ export default function AboutUs() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="aboutus">
-        <NavBar />
-        <Hero content={<div className="aboutus-hero">
+      <main>
+        <LightHero content={<div>
           <span>About us</span>
           <h1>Building stellar websites for early startups</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>} image={"/aboutus-hero.webp"} />
 
         <AboutUsContent />
         <Benefits />
         <Stats />
         <AboutUsTeam />
-
-        <Footer />
       </main>
     </>
   )

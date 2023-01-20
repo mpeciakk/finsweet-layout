@@ -1,9 +1,11 @@
 import Image from "next/image"
+import WhiteContainer from "@/components/Container/WhiteContainer"
+import GrayContainer from "@/components/Container/GrayContainer"
 
 export default function AboutUsTeam() {
   return (
-    <div className="aboutus-team-wrapper wrapper">
-      <div className="aboutus-team container">
+    <GrayContainer>
+      <div className="aboutus-team">
         <h2>Meet our team</h2>
 
         <div className="people">
@@ -40,6 +42,6 @@ export default function AboutUsTeam() {
           </div>
         </div>
       </div>
-    </div>
+    </GrayContainer>
   )
 }

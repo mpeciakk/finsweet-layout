@@ -8,7 +8,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: auto;
-  padding: 7rem 10rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 
   .content {
     color: white;
@@ -18,8 +19,12 @@
       padding-right: 2rem;
     }
 
-    h1 {
+    p {
       padding: 1.5rem 0;
+    }
+
+    h1 {
+      //padding: 1.5rem 0;
 
       @media screen and (max-width: 1600px) {
         font-size: 48px;
@@ -42,5 +47,23 @@
   @media screen and (max-width: 1200px) {
     display: block;
     text-align: center;
+  }
+}
+
+.hero-light {
+  .hero {
+    p {
+      font-weight: 400;
+      line-height: 28px;
+    }
+
+    span {
+      font-size: 18px;
+      line-height: 32px;
+    }
+
+    p, span, h1 {
+      color: $dark-blue;
+    }
   }
 }

@@ -2,6 +2,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import { useState } from "react"
 import Image from "next/image"
+import GrayContainer from "@/components/Container/GrayContainer"
 
 export default function HomepageReview() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -21,8 +22,8 @@ export default function HomepageReview() {
   }
 
   return (
-    <div className="homepage-review-wrapper wrapper">
-      <div className="homepage-review container">
+    <GrayContainer>
+      <div className="homepage-review">
         <div className="left">
           <h3>What our clients say about us</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
@@ -86,6 +87,6 @@ export default function HomepageReview() {
           </div>
         </div>
       </div>
-    </div>
+    </GrayContainer>
   )
 }

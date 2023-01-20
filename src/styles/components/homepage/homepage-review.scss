@@ -1,14 +1,11 @@
-@import "../variables.scss";
-
-.homepage-review-wrapper {
-  background: $gray;
-}
+@import "../../variables";
 
 .homepage-review {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 8rem;
-  padding: 8rem 10rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 
   @media screen and (max-width: 1200px) {
     display: flex;

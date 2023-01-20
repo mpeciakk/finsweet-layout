@@ -1,9 +1,7 @@
-import NavBar from "@/components/NavBar"
 import Head from "next/head"
-import Footer from "@/components/Footer"
-import Hero from "@/components/Hero"
-import HomepageContent from "@/components/Homepage/HomepageContent"
+import HomepageFeatures from "@/components/Homepage/HomepageFeatures"
 import HomepageReview from "@/components/Homepage/HomepageReview"
+import DarkHero from "@/components/Hero/DarkHero"
 
 export default function Home() {
   return (
@@ -15,20 +13,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <NavBar />
-        <Hero content={<div className="homepage-hero">
+        <DarkHero content={<div>
           <h1>Building stellar websites for early startups</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 
           <div className="buttons">
-            <button className="work">View our work</button>
-            <button className="pricing">View pricing</button>
+            <button className="primary">View our work</button>
+            <button className="secondary">View pricing</button>
           </div>
         </div>} image={"/homepage-hero.png"} />
 
-        <HomepageContent />
+        <HomepageFeatures />
         <HomepageReview />
-        <Footer />
       </main>
     </>
   )

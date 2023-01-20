@@ -1,9 +1,10 @@
 import Card from "@/components/Card"
+import WhiteContainer from "@/components/Container/WhiteContainer"
 
-export default function HomepageContent() {
+export default function HomepageFeatures() {
   return (
-    <div className="homepage-wrapper wrapper">
-      <div className="homepage-content container">
+    <WhiteContainer>
+      <div className="homepage-features">
         <div className="features-text">Features</div>
         <h2>Design that solves<br /> problems, one product at<br /> a time</h2>
         <div className="content">
@@ -21,6 +22,6 @@ export default function HomepageContent() {
                 content="Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi." />
         </div>
       </div>
-    </div>
+    </WhiteContainer>
   )
 }

@@ -1,9 +1,10 @@
 import Card from "@/components/Card"
+import WhiteContainer from "@/components/Container/WhiteContainer"
 
 export default function Benefits() {
   return (
-    <div className="aboutus-benefits-wrapper wrapper">
-      <div className="aboutus-benefits container">
+    <WhiteContainer>
+      <div className="benefits">
         <h2>The benefits of working with us</h2>
 
         <div className="cards">
@@ -18,6 +19,6 @@ export default function Benefits() {
                 background />
         </div>
       </div>
-    </div>
+    </WhiteContainer>
   )
 }

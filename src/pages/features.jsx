@@ -3,6 +3,7 @@ import Benefits from "@/components/Benefits"
 import Stats from "@/components/Stats"
 import DarkHero from "@/components/Hero/DarkHero"
 import LightHero from "@/components/Hero/LightHero"
+import FeaturesBenefits from "@/components/Features/FeaturesBenefits"
 
 export default function Features() {
   return (
@@ -22,8 +23,7 @@ export default function Features() {
           <button className="primary">View pricing</button>
         </div>} image={"/features-hero.png"} />
 
-        <Stats />
-        <Benefits />
+        <FeaturesBenefits />
 
         <div className="features-lower-content">
           <LightHero content={<div>

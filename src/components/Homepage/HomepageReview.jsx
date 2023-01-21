@@ -4,6 +4,25 @@ import { useState } from "react"
 import Image from "next/image"
 import GrayContainer from "@/components/Container/GrayContainer"
 
+function Review({ content, avatar, name, role }) {
+  return (
+    <div className="review">
+      <h5>{content}</h5>
+
+      <div className="avatar">
+        <div className="image">
+          <Image src={avatar} alt="avatar" fill />
+        </div>
+
+        {/*<div className="info">*/}
+          <span className="name">{name}</span>
+          <span className="role">{role}</span>
+        {/*</div>*/}
+      </div>
+    </div>
+  )
+}
+
 export default function HomepageReview() {
   const [currentSlide, setCurrentSlide] = useState(0)
 
@@ -32,53 +51,15 @@ export default function HomepageReview() {
         <div className="right">
           <Carousel showThumbs={false} showStatus={false} selectedItem={currentSlide}
                     onChange={updateCurrentSlide} showIndicators={false} showArrows={false}>
-            <div className="review">
-              <h5>The best agency we’ve worked with so far. They understand our product and are able to add new features
-                with a great focus.</h5>
-
-              <div className="avatar">
-                <div className="image">
-                  <Image src="/avatar.jpeg" alt="avatar" fill />
-                </div>
-
-                <div className="info">
-                  <span className="name">Jenny Wilson</span>
-                  <span className="status">Vice President</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="review">
-              <h5>The best agency we’ve worked with so far. They understand our product and are able to add new features
-                with a great focus.</h5>
-
-              <div className="avatar">
-                <div className="image">
-                  <Image src="/avatar.jpeg" alt="avatar" fill />
-                </div>
-
-                <div className="info">
-                  <span className="name">Jenny Wilson</span>
-                  <span className="status">Vice President</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="review">
-              <h5>The best agency we’ve worked with so far. They understand our product and are able to add new features
-                with a great focus.</h5>
-
-              <div className="avatar">
-                <div className="image">
-                  <Image src="/avatar.jpeg" alt="avatar" fill />
-                </div>
-
-                <div className="info">
-                  <span className="name">Jenny Wilson</span>
-                  <span className="status">Vice President</span>
-                </div>
-              </div>
-            </div>
+            <Review
+              content="The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."
+              avatar="/avatar.jpeg" name="Jenny Wilson" role="Vice President" />
+            <Review
+              content="The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."
+              avatar="/avatar.jpeg" name="Jenny Wilson" role="Vice President" />
+            <Review
+              content="The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."
+              avatar="/avatar.jpeg" name="Jenny Wilson" role="Vice President" />
           </Carousel>
 
           <div className="buttons">
@@ -88,5 +69,5 @@ export default function HomepageReview() {
         </div>
       </div>
     </GrayContainer>
-  )
+)
 }

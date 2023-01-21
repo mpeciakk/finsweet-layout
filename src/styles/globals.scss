@@ -1,17 +1,17 @@
 @import url('https://unpkg.com/modern-css-reset/dist/reset.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
 
-@import "./components/navbar.scss";
-@import "./components/footer.scss";
-@import "./components/hero.scss";
+@import "components/navbar";
+@import "components/footer";
+@import "components/hero";
 @import "components/homepage/homepage-features";
 @import "components/homepage/homepage-review";
 @import "components/about-us/aboutus-content";
-@import "./components/benefits.scss";
-@import "./components/card.scss";
-@import "./components/stats.scss";
+@import "components/benefits";
+@import "components/card";
+@import "components/stats";
 @import "components/about-us/aboutus-team";
-@import "components/button.scss";
+@import "components/button";
 @import "components/container";
 
 * {

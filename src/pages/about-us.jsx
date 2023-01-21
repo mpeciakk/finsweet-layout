@@ -4,6 +4,7 @@ import Benefits from "@/components/Benefits"
 import Stats from "@/components/Stats"
 import AboutUsTeam from "@/components/AboutUs/AbousUsTeam"
 import LightHero from "@/components/Hero/LightHero"
+import AboutUsBenefits from "@/components/AboutUs/AboutUsBenefits"
 
 export default function AboutUs() {
   return (
@@ -23,8 +24,7 @@ export default function AboutUs() {
         </div>} image={"/aboutus-hero.webp"} />
 
         <AboutUsContent />
-        <Benefits />
-        <Stats />
+        <AboutUsBenefits />
         <AboutUsTeam />
       </main>
     </>

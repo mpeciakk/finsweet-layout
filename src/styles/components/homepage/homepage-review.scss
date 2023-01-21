@@ -18,15 +18,20 @@
     @media screen and (max-width: 1200px) {
       text-align: center;
     }
+
+    p {
+      margin-top: 1rem;
+      font-weight: 400;
+    }
   }
 
   .right {
     position: relative;
-    max-width: 100%;
 
     .review {
       h5 {
         text-align: left;
+        margin-bottom: 3rem;
 
         @media screen and (max-width: 1200px) {
           text-align: center;
@@ -34,37 +39,29 @@
       }
 
       .avatar {
-        display: flex;
-        align-items: center;
-        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: max-content max-content;
 
         .image {
+          grid-row: span 2;
+
           position: relative;
           width: 56px;
           height: 56px;
-          max-width: 56px;
-          max-height: 56px;
 
           img {
-            object-fit: scale-down;
+            object-fit: contain;
             border-radius: 40px;
           }
         }
 
-        .info {
-          display: flex;
-          flex-direction: column;
-          text-align: left;
+        .name {
+          font-size: 18px;
+        }
 
-          .name {
-            font-size: 18px;
-            line-height: 32px;
-          }
-
-          .status {
-            font-size: 12px;
-            line-height: 24px;
-          }
+        .status {
+          font-size: 12px;
+          line-height: 24px;
         }
       }
     }

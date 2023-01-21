@@ -7,9 +7,6 @@
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: auto;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
 
   .content {
     color: white;
@@ -24,8 +21,6 @@
     }
 
     h1 {
-      //padding: 1.5rem 0;
-
       @media screen and (max-width: 1600px) {
         font-size: 48px;
         font-weight: 600;
@@ -41,6 +36,10 @@
 
     @media screen and (max-width: 1200px) {
       display: none;
+    }
+
+    img {
+      object-fit: contain;
     }
   }
 

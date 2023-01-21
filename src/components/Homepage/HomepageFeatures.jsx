@@ -3,7 +3,7 @@ import WhiteContainer from "@/components/Container/WhiteContainer"
 
 export default function HomepageFeatures() {
   return (
-    <WhiteContainer>
+    <WhiteContainer yPadding>
       <div className="homepage-features">
         <div className="features-text">Features</div>
         <h2>Design that solves<br /> problems, one product at<br /> a time</h2>

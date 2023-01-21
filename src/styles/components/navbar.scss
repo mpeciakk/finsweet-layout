@@ -1,24 +1,18 @@
 @import "../variables.scss";
 
-.navbar-wrapper {
-  background: $tint-blue;
-}
-
 .navbar {
-  color: white;
   display: flex;
   justify-content: space-between;
-  padding: 0 10rem;
+  align-items: center;
   height: 5.75rem;
 
   .hamburger {
-    width: 60px;
+    width: 30px;
     border: 0;
     cursor: pointer;
     display: none;
     background: none;
-    align-items: center;
-    justify-content: flex-end;
+    height: fit-content;
 
     .icon {
       width: 30px;
@@ -94,9 +88,6 @@
     }
 
     .contact-us {
-      width: 185px;
-      height: 60px;
-      border-radius: 40px;
       border: 2px solid rgba(244, 246, 252, 0.2);
       background: none;
       color: white;

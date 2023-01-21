@@ -1,6 +1,4 @@
 .homepage-features {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
   text-align: center;
 
   .features-text {
@@ -12,6 +10,5 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    box-sizing: border-box;
   }
 }

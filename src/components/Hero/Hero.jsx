@@ -9,7 +9,7 @@ export default function Hero({ content, image }) {
       </div>
 
       <div className="image">
-        <Image src={image} alt="homepage hero" layout="fill" objectFit="contain" />
+        <Image src={image} alt="homepage hero" fill />
       </div>
     </div>
   )

@@ -1,13 +1,14 @@
 import Image from "next/image"
 import { useState } from "react"
 import Link from "next/link"
+import DarkContainer from "@/components/Container/DarkContainer"
 
 export default function NavBar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false)
 
   return (
-    <div className="navbar-wrapper wrapper">
-      <nav className="navbar container">
+    <DarkContainer>
+      <nav className="navbar">
         <div className="logo">
           <Image src="/logo.svg" alt="logo" width={122} height={25} />
         </div>
@@ -41,10 +42,10 @@ export default function NavBar() {
           <li>Blog</li>
 
           <li>
-            <button className="contact-us">Contact us</button>
+            <button className="primary contact-us">Contact us</button>
           </li>
         </ul>
       </nav>
-    </div>
+    </DarkContainer>
   )
 }

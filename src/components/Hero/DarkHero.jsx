@@ -4,7 +4,7 @@ import Hero from "@/components/Hero/Hero"
 
 export default function DarkHero({ content, image }) {
   return (
-    <DarkContainer>
+    <DarkContainer yPadding>
       <Hero content={content} image={image} />
     </DarkContainer>
   )

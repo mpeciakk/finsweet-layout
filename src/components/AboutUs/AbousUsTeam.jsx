@@ -4,7 +4,7 @@ import GrayContainer from "@/components/Container/GrayContainer"
 
 export default function AboutUsTeam() {
   return (
-    <GrayContainer>
+    <GrayContainer yPadding>
       <div className="aboutus-team">
         <h2>Meet our team</h2>
 

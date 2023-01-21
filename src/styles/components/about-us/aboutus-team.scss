@@ -1,13 +1,10 @@
 @import "../../variables";
 
 .aboutus-team {
-  padding: 8rem 0;
-
   text-align: center;
 
   h2 {
     margin-bottom: 3rem;
-    color: $dark-blue;
   }
 
   .people {
@@ -47,13 +44,10 @@
 
       .name {
         margin-top: 2rem;
-        color: $dark-blue;
-        text-align: center;
       }
 
       .role {
         font-weight: 400;
-        color: $dark-blue;
       }
     }
   }

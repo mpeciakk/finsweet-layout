@@ -3,6 +3,7 @@
 .wrapper {
   width: 100%;
   background: $tint-blue;
+  color: white;
 }
 
 .container {
@@ -16,16 +17,23 @@
     padding-right: 1rem;
     padding-left: 1rem;
   }
+
+  &.y-padding {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
 }
 
 .wrapper-light {
   .wrapper {
     background: white;
+    color: $dark-blue;
   }
 }
 
 .wrapper-gray {
   .wrapper {
     background: $gray;
+    color: $dark-blue;
   }
 }

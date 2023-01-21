@@ -5,7 +5,7 @@ import WhiteContainer from "@/components/Container/WhiteContainer"
 
 export default function LightHero({ content, image }) {
   return (
-    <WhiteContainer>
+    <WhiteContainer yPadding>
       <div className="hero-light">
         <Hero content={content} image={image} />
       </div>

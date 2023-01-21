@@ -1,6 +1,6 @@
 @import "../../variables";
 
-.blog-post-featured {
+.blog-post-title {
   text-align: center;
 
   h2 {
@@ -32,6 +32,10 @@
       display: none;
     }
   }
+}
+
+.blog-post-featured {
+  text-align: center;
 
   .description {
     p {

@@ -1,5 +1,6 @@
 import Head from "next/head"
 import BlogPostFeatured from "@/components/Blog/BlogPostFeatured"
+import BlogPosts from "@/components/Blog/BlogPosts"
 
 export default function Blog() {
   return (
@@ -12,6 +13,7 @@ export default function Blog() {
       </Head>
       <main>
         <BlogPostFeatured />
+        <BlogPosts />
       </main>
     </>
   )

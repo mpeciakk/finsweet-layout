@@ -1,12 +1,19 @@
 @import "../variables";
 
 button {
+  cursor: pointer;
+
   &.primary {
     width: 185px;
     height: 60px;
     border-radius: 40px;
     background: $yellow;
     color: black;
+
+    &.black {
+      background: $dark-blue;
+      color: white;
+    }
   }
 
   &.secondary {

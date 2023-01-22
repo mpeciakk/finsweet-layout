@@ -37,12 +37,21 @@ export default function NavBar() {
           <li>
             <Link href="features">Features</Link>
           </li>
-          <li>Pricing</li>
-          <li>FAQ</li>
-          <li>Blog</li>
+          <li>
+            <Link href="pricing">Pricing</Link>
+          </li>
+          <li>
+            <Link href="faq">FAQ</Link>
+          </li>
+          <li>
+            <Link href="blog">Blog</Link>
+          </li>
 
           <li>
-            <button className="primary contact-us">Contact us</button>
+            <Link href="contact-us">
+              <button className="primary contact-us">Contact us</button>
+            </Link>
+
           </li>
         </ul>
       </nav>
